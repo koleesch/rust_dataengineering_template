@@ -7,8 +7,7 @@ help:
 clean: ## Clean the project using cargo
 	cargo clean
 
-build: ## Build the project using cargo	
-	fmt
+build: fmt ## Build the project using cargo	
 	cargo build
 
 lint: ## Lint the project using cargo
@@ -36,5 +35,4 @@ run: ## Run the project using cargo
 release: ## Build a release binary using cargo
 	cargo build --release
 
-all: ## make all 
-	format lint test run
+all: fmt lint test build run ## make all 
