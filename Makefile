@@ -8,7 +8,7 @@ clean: ## Clean the project using cargo
 	cargo clean
 
 build: ## Build the project using cargo	
-    @fmt
+	fmt
 	cargo build
 
 lint: ## Lint the project using cargo
